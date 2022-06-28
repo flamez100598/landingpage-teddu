@@ -20,10 +20,10 @@
                     <div class="title-form">
                         <img src="~/static/images/title-form-buy.png" />
                     </div>
-                    <div class="flex">
+                    <div class="flex form-table">
                         <div class="stable-coin flex flex-col"> 
                             <div class="select-coin">
-                                <img src="~/static/icons/arrow.png" />
+                                <img src="~/static/icons/bnb.png" />
                                 <span class="coin">BNB</span>
                                 <img src="~/static/icons/icon-dropdown.png" />
                             </div>
