@@ -1,13 +1,13 @@
 <template>
   <div class="flex justify-between align-center footer">
     <div class="copy-right">
-      Copyright ©Teddynu, 2022
+      <div class="text-copyright">Copyright ©Teddynu, 2022</div>
     </div>
     <div class="icon-contact">
       <h2><img src="~/static/icons/keep-it-touch.png" alt=""></h2>
-      <div class="list-icons">
-        <a v-for="(item, index) in data" :key="index" href="#" target="_blank">
-          <img src="~/static/icons/keep-it-touch.png" alt="">
+      <div class="list-icons flex justify-evenly">
+        <a v-for="(item, index) in data" :key="index" :href="item.link" target="_blank">
+          <img :src="item.icon" alt="">
         </a>
       </div>
     </div>
@@ -57,6 +57,23 @@ export default Vue.extend({
   padding-bottom: 21px;
   .policy {
     padding-right: 32px;
+  }
+  .list-icons {
+    padding-top: 30px;
+  }
+  .copy-right {
+    position: relative;
+    font-size: 20px;
+    color: #ffff;
+    font-weight: 400;
+    width: 20%;
+  }
+  .text-copyright {
+    position: absolute;
+    bottom: 0%;
+  }
+  .icon-contact {
+    margin-top: 80px;
   }
 }
 </style>

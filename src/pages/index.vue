@@ -39,7 +39,7 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-.body-container {  background: linear-gradient(360deg, rgba(197, 109, 7, 0.4) -60.21%, rgba(32, 24, 17, 0.62) 92.03%);
+.body-container {  background: #302B27;
 }
 </style>
 
