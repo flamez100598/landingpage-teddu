@@ -9,7 +9,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'csa-landing-page',
+    title: 'teddu landing page',
     htmlAttrs: {
       lang: 'en',
     },

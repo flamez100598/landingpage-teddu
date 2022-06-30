@@ -2,12 +2,11 @@
   <div class="body-container overflow-hidden">
     <Banner />
     <BuyTeddu />
-    <SubBanner />
-    <Partnership />
-    <Leadership />
-    <ContactUs />
-    <ListCategories />
-    <!-- <video class="bgvid" autoPlay muted loop playsInline src="~/static/video/Bou_Website_background_animation_1920.mp4"></video> -->
+    <TedduStaking />
+    <Earn />
+    <HowItWork />
+    <Tokenomic />
+    <Features />
     <Footer />
   </div>
 </template>
@@ -15,25 +14,25 @@
 <script lang="ts">
 import Vue from 'vue'
 import Banner from '~/components/Home/Banner/index.vue'
-import SubBanner from '~/components/Home/SubBanner/index.vue'
-import Partnership from '~/components/Home/Partnership/index.vue'
-import Leadership from '~/components/Home/Leadership/index.vue'
-import ContactUs from '~/components/Home/ContactUs.vue'
-import ListCategories from '~/components/Home/ListCategories/index.vue'
 import Footer from '~/components/Home/Footer.vue'
 import BuyTeddu from '~/components/BuyTeddu/index.vue'
+import Features from '~/components/Features/index.vue'
+import TedduStaking from '~/components/TedduStaking/index.vue'
+import Earn from '~/components/Earn/index.vue'
+import HowItWork from '~/components/HowItWork/index.vue'
+import Tokenomic from '~/components/Tokenomic/index.vue'
 
 export default Vue.extend({
   name: 'IndexPage',
   components: {
     Banner,
-    SubBanner,
-    Partnership,
-    Leadership,
-    ContactUs,
-    ListCategories,
     Footer,
-    BuyTeddu
+    BuyTeddu,
+    Features,
+    TedduStaking,
+    Earn,
+    HowItWork,
+    Tokenomic
 },
 })
 </script>
@@ -57,6 +56,14 @@ export default Vue.extend({
 @font-face {
   font-family: 'Langar';
   src: url(../static/fonts/Langar-Regular.ttf);
+}
+@font-face {
+  font-family: "Monument Extended";
+  src: local("Monument Extended"),
+   url(../static/fonts/MonumentExtended-Regular.otf) format("truetype");
+}
+.font-mehu {
+  font-family: "Monument Extended";
 }
 .desktop {
   @media only screen and (max-width: 767px) {
